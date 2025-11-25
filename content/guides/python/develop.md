@@ -211,7 +211,7 @@ You'll need to clone a new repository to get a sample application that includes 
    #     secrets:
    #       - db-password
    #     volumes:
-   #       -db-data:/var/lib/postgresql
+   #       - db-data:/var/lib/postgresql
    #     environment:
    #       - POSTGRES_DB=example
    #       - POSTGRES_PASSWORD_FILE=/run/secrets/db-password
@@ -364,7 +364,7 @@ services:
     secrets:
       - db-password
     volumes:
-      -db-data:/var/lib/postgresql
+      - db-data:/var/lib/postgresql
     environment:
       - POSTGRES_DB=example
       - POSTGRES_PASSWORD_FILE=/run/secrets/db-password
@@ -507,7 +507,7 @@ services:
     secrets:
       - db-password
     volumes:
-      -db-data:/var/lib/postgresql
+      - db-data:/var/lib/postgresql
     environment:
       - POSTGRES_DB=example
       - POSTGRES_PASSWORD_FILE=/run/secrets/db-password
